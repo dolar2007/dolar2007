@@ -1,6 +1,6 @@
 const teamMembers = [
   {
-    name: "Jana Nováková",
+    name: "Roksana Kozlovska",
     role: "Zakladatelka & Kosmetička",
     description: "Více než 15 let zkušeností v kosmetice. Specializuje se na ošetření pleti a make-up.",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80",
