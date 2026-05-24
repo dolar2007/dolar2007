@@ -3,7 +3,7 @@ const teamMembers = [
     name: "Roksana Kozlovska",
     role: "Zakladatelka & Kosmetička",
     description: "Více než 15 let zkušeností v kosmetice. Specializuje se na ošetření pleti a make-up.",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80",
+    image: "",
   },
   {
     name: "Petra Svobodová",
@@ -36,11 +36,17 @@ export function Team() {
           {teamMembers.map((member, index) => (
             <div key={index} className="text-center">
               <div className="mx-auto aspect-square w-48 overflow-hidden rounded-full bg-muted">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="h-full w-full object-cover"
-                />
+                {member.image ? (
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <div className="flex h-full w-full items-center justify-center bg-primary/10 text-4xl font-serif text-primary">
+                    {member.name.split(' ').map(n => n[0]).join('')}
+                  </div>
+                )}
               </div>
               <h3 className="mt-6 font-serif text-xl font-semibold text-foreground">
                 {member.name}
