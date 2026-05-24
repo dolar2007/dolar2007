@@ -14,7 +14,26 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Roxy Studio | Kosmetický salon Praha',
-  description: 'Profesionální kosmetické služby v Praze. Dopřejte si relax a profesionální péči o vaši pleť.',
+  description: 'Profesionální kosmetické služby v Praze. Dopřejte si relax a profesionální péči o vaši pleť. Ošetření pleti, čištění, peeling, depilace.',
+  keywords: ['kosmetický salon', 'Praha', 'ošetření pleti', 'čištění pleti', 'depilace', 'peeling', 'Roxy Studio', 'kosmetika'],
+  authors: [{ name: 'Roxy Studio' }],
+  creator: 'Roxy Studio',
+  openGraph: {
+    title: 'Roxy Studio | Kosmetický salon Praha',
+    description: 'Profesionální kosmetické služby v Praze. Dopřejte si relax a profesionální péči o vaši pleť.',
+    url: 'https://your-domain.cz',
+    siteName: 'Roxy Studio',
+    locale: 'cs_CZ',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   generator: 'v0.app',
   icons: {
     icon: [
