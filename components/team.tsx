@@ -5,18 +5,6 @@ const teamMembers = [
     description: "Více než 15 let zkušeností v kosmetice. Specializuje se na ošetření pleti a make-up.",
     image: "",
   },
-  {
-    name: "Petra Svobodová",
-    role: "Kosmetička",
-    description: "Specialistka na lash lifting a brow design. Certifikovaná brow stylistka.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80",
-  },
-  {
-    name: "Markéta Dvořáková",
-    role: "Nehty & Masáže",
-    description: "Profesionální nehtová specialistka a masérka. Vždy perfektní výsledky.",
-    image: "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?w=400&auto=format&fit=crop&q=80",
-  },
 ]
 
 export function Team() {
@@ -32,9 +20,9 @@ export function Team() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 flex justify-center">
           {teamMembers.map((member, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="text-center max-w-sm">
               <div className="mx-auto aspect-square w-48 overflow-hidden rounded-full bg-muted">
                 {member.image ? (
                   <img
